@@ -7,9 +7,9 @@
 ### CONSTANTS/SETTINGS ###
 ##########################
 
-FAN_ON_TEMPERATURE = 52 # CPU Temperature (in celsius) at which the fan should turn on
+FAN_ON_TEMPERATURE = 40 # CPU Temperature (in celsius) at which the fan should turn on
 
-FAN_OFF_TEMPERATURE = 47 # CPU Temperature (in celsius) at which the fan should cool to after it is 
+FAN_OFF_TEMPERATURE = 35 # CPU Temperature (in celsius) at which the fan should cool to after it is 
 # turned on. This must be lower than FAN_ON_TEMPERATURE
 
 ######################
