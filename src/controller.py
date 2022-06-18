@@ -7,9 +7,9 @@
 ### CONSTANTS/SETTINGS ###
 ##########################
 
-FAN_ON_TEMPERATURE = 40 # CPU Temperature (in celsius) at which the fan should turn on
+FAN_ON_TEMPERATURE = 60 # CPU Temperature (in celsius) at which the fan should turn on
 
-FAN_OFF_TEMPERATURE = 35 # CPU Temperature (in celsius) at which the fan should cool to after it is 
+FAN_OFF_TEMPERATURE = 65 # CPU Temperature (in celsius) at which the fan should cool to after it is 
 # turned on. This must be lower than FAN_ON_TEMPERATURE
 
 ######################
@@ -70,4 +70,7 @@ while True:
             fan.set_light(100, 100, 100)
 
     # Wait 60 seconds, then loop again
+    print(cpu_temp)
+    print(get_fan_status())
+    print('')
     sleep(60)
