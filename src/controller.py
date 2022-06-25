@@ -46,6 +46,9 @@ if not FAN_OFF_TEMPERATURE < FAN_ON_TEMPERATURE:
     
     quit()
 
+fan.set_light(0, 50, 0)
+fan.set_fan(False)
+
 #################
 ### MAIN LOOP ###
 #################
