@@ -60,14 +60,14 @@ while True:
         if cpu_temp <= FAN_OFF_TEMPERATURE:
             # If the CPU temperature is less than or equal to FAN_OFF_TEMPERATURE, turn off the fan and set light to green
             fan.set_fan(False)
-            fan.set_light(0, 100, 0)
+            fan.set_light(0, 50, 0)
     
     elif fan.get_fan() == 0:
         # If the fan is off, check the CPU temperature
         if cpu_temp >= FAN_ON_TEMPERATURE:
             # If the CPU temperature is greater than or equal to FAN_ON_TEMPERATURE, turn ON the fan and set light to white    
             fan.set_fan(True)
-            fan.set_light(100, 100, 100)
+            fan.set_light(50, 50, 50)
 
     # Wait 60 seconds, then loop again
     print(cpu_temp)
